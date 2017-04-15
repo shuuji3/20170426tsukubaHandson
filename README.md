@@ -8,13 +8,13 @@
 * src/node/chat Node.js版 チャットアプリ
 
 ## ハンズオンの内容
-0. WebAppsについて
-1. WebAppsを作成しよう
-2. PHP版のWebアプリを配置してみよう ~OneDrve/DropBox/FTP/Github経由でデプロイ~
+0. WebAppsについて  
+1. WebAppsを作成しよう  
+2. PHP版のWebアプリを配置してみよう -OneDrve/DropBox/FTP/Github経由でデプロイ-  
 
-時間があれば以下も行います
-3. Node.js版のWebアプリを配置してみよう ~WebSocketの設定~
-4. PHPとDBを使うWebアプリを配置してみよう ~MySQLと連携~
+時間があれば以下も行います  
+3. Node.js版のWebアプリを配置してみよう -WebSocketの設定-  
+4. PHPとDBを使うWebアプリを配置してみよう -MySQLと連携-  
 
 ## 0. AzureとWebAppsについて
 ### Azureとは
