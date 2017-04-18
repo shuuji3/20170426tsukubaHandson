@@ -162,9 +162,9 @@ Azureでは様々な方法でWebアプリをデプロイ出来ますが、以下
 
 ここからソースコードをどこから同期するかによって手順が別れます。
 
-DropBox/OneDrive経由でデプロイする方は[こちら](./#dropboxonedrive)  
-外部リポジトリ経由でデプロイする方は[こちら](./#外部リポジトリ)  
-Githubを利用してデプロイする方は[こちら](./#github)   
+DropBox/OneDrive経由でデプロイする方は[こちら](#dropboxonedrive)  
+外部リポジトリ経由でデプロイする方は[こちら](#外部リポジトリ)  
+Githubを利用してデプロイする方は[こちら](#github)   
 
 #### DropBox/OneDrive
 基本的な操作はほぼ同じなのでここではDropBoxを例に説明します。  
