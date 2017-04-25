@@ -8,6 +8,27 @@ header("Content-Type: application/json; charset=utf-8");
 $mysql_host = 'yourhost';
 $mysql_user = 'dbuser';
 $mysql_pass = 'dbpass';
+$mysql_db_name = 'dbname';
+
+
+//MySQL in Appを利用する場合、サーバー情報などは環境変数に入っているのでこれを利用する
+//環境変数から接続文字列を取得
+$conn_str = $_SERVER["MYSQLCONNSTR_localdb"];
+print($conn_str);
+//正規表現でキーとバリューを取得
+$out = array();
+$r = preg_match_all("/([^=]+)=([^;]+);?/", $conn_str, $out, PREG_SET_ORDER);
+
+$map = array();
+foreach ($out as $set){
+    $map[$set[1]] = $set[2];
+}
+//キーバリューにしたものを変数に格納
+$mysql_host = $map["Data Source"];
+$mysql_user = $map["User Id"];
+$mysql_pass = $map["Password"];
+$mysql_db_name = $map["Database"];
+$mysql_db_name = $map["Database"];
 
 
 //もしリクエストがhttp getメソッドなら
@@ -19,7 +40,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     //データベースサーバーへ接続
     $sql = mysql_connect($mysql_host,$mysql_user,$mysql_pass);
     //データベースを選択
-    $todoDb = mysql_select_db('garitodo',$sql);
+    $todoDb = mysql_select_db(mysql_db_name, $sql);
     mysql_set_charset('utf-8');
     
     //リクエストがどのタイプかによって処理を変更
