@@ -5,9 +5,9 @@
 header("Content-Type: application/json; charset=utf-8");
 
 //mysqlへの接続情報
-$mysql_host = 'ja-cdbr-azure-west-a.cloudapp.net';
-$mysql_user = 'b82cee9bd25c06';
-$mysql_pass = 'ee67f77a';
+$mysql_host = 'yourhost';
+$mysql_user = 'dbuser';
+$mysql_pass = 'dbpass';
 
 
 //もしリクエストがhttp getメソッドなら
