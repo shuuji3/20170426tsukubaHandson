@@ -14,7 +14,6 @@ $mysql_db_name = 'dbname';
 //MySQL in Appを利用する場合、サーバー情報などは環境変数に入っているのでこれを利用する
 //環境変数から接続文字列を取得
 $conn_str = $_SERVER["MYSQLCONNSTR_localdb"];
-print($conn_str);
 //正規表現でキーとバリューを取得
 $out = array();
 $r = preg_match_all("/([^=]+)=([^;]+);?/", $conn_str, $out, PREG_SET_ORDER);
