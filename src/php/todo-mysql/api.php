@@ -27,7 +27,6 @@ $mysql_host = $map["Data Source"];
 $mysql_user = $map["User Id"];
 $mysql_pass = $map["Password"];
 $mysql_db_name = $map["Database"];
-$mysql_db_name = $map["Database"];
 
 
 //もしリクエストがhttp getメソッドなら
@@ -39,7 +38,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     //データベースサーバーへ接続
     $sql = mysql_connect($mysql_host,$mysql_user,$mysql_pass);
     //データベースを選択
-    $todoDb = mysql_select_db(mysql_db_name, $sql);
+    $todoDb = mysql_select_db($mysql_db_name, $sql);
     mysql_set_charset('utf-8');
     
     //リクエストがどのタイプかによって処理を変更
