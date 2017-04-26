@@ -7,6 +7,10 @@
 * src/node/basic Node.js動作確認Webアプリ(Hello Nodeと出るだけです)
 * src/node/chat Node.js版 チャットアプリ
 
+## デモアプリ
+Do you like Microsoft?
+https://gusugusuwebapps.azurewebsites.net/
+
 ## ハンズオンの内容
 0. [WebAppsについて](#0-azureとwebappsについて)  
 1. [WebAppsを作成しよう](#1-webappsを作成しよう)  
