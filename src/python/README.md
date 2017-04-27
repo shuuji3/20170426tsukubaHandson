@@ -139,6 +139,7 @@ Pin to dashboardにチェックを入れ、createをクリック。
 ![DeploymentOptions](img/imageDeploymentOptions.png)  
 ChooseSourceをクリック  
 デプロイ環境はなんでもよい。  
+DoULikeMSフォルダをソースとする。  
 ![ChooseSource](img/imageChooseSource.png)  
 ApplicationSettingをクリック  
 Python versionを3.4に設定する。  
