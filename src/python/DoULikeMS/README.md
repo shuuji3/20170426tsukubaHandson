@@ -11,3 +11,8 @@ Azureポータルの自分が作ったアプリの「設定」の「アプリケ
 「アプリケーション」 にチェック  
 で可能  
 
+## MIT Licence
+```
+    Copyright (c) Microsoft Corporation. All rights reserved.
+
+```
